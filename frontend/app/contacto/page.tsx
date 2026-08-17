@@ -7,7 +7,7 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import ChatBot from '../../components/ChatBot'
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://192.168.3.24:3005'
+const API_URL = process.env.NEXT_PUBLIC_API_URL || ''
 
 export default function ContactoPage() {
   const [form, setForm] = useState({
