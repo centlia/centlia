@@ -42,7 +42,7 @@ export default function ContactoPage() {
     const phoneClean = form.phone.replace(/[\(\)\-\s]/g, '')
     if (!phoneClean || !/^\d{10}$/.test(phoneClean)) {
       newErrors.phone = 'El teléfono debe tener exactamente 10 dígitos (ej: 5512345678)'
-    } else if (phoneClean === phoneClean[0] * 10) {
+    } else if (parseInt(phoneClean) === parseInt(phoneClean[0]) * 10) {
       newErrors.phone = 'El teléfono no puede tener todos los dígitos iguales'
     }
 
