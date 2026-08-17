@@ -189,7 +189,7 @@ export default function ContactoPage() {
                   <input
                     type="text"
                     placeholder="Ej: Juan Pérez"
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.name ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.name}
@@ -211,7 +211,7 @@ export default function ContactoPage() {
                   <input
                     type="email"
                     placeholder="Ej: juan@empresa.com"
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.email ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.email}
@@ -233,7 +233,7 @@ export default function ContactoPage() {
                   <input
                     type="tel"
                     placeholder="Ej: 5512345678"
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.phone ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.phone}
@@ -255,7 +255,7 @@ export default function ContactoPage() {
                   <input
                     type="text"
                     placeholder="Nombre de tu empresa"
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition"
                     value={form.company}
                     onChange={(e) => setForm({...form, company: e.target.value})}
                   />
@@ -264,7 +264,7 @@ export default function ContactoPage() {
                 <div>
                   <label className="block text-sm font-medium text-[#0A1628] mb-1">Servicio de interés *</label>
                   <select
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.service_type ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.service_type}
@@ -273,20 +273,20 @@ export default function ContactoPage() {
                       if (errors.service_type) setErrors({...errors, service_type: ''})
                     }}
                   >
-                    <option value="">Selecciona un servicio</option>
-                    <option value="redes">Infraestructura y Redes</option>
-                    <option value="seguridad">Seguridad y Videovigilancia</option>
-                    <option value="desarrollo">Desarrollo a Medida</option>
-                    <option value="iot">Internet de las Cosas</option>
-                    <option value="mantenimiento">Mantenimiento Integral</option>
-                    <option value="ia">Inteligencia Artificial</option>
-                    <option value="firma">Firma Electrónica</option>
-                    <option value="facturacion">Facturación Electrónica</option>
-                    <option value="soporte">Soporte Técnico</option>
-                    <option value="hardware">Hardware y Energía</option>
-                    <option value="ecommerce">E-commerce</option>
-                    <option value="cloud">Cloud y Multinube</option>
-                    <option value="otro">Otro</option>
+                    <option value="" className="font-medium">Selecciona un servicio</option>
+                    <option value="redes" className="font-medium">Infraestructura y Redes</option>
+                    <option value="seguridad" className="font-medium">Seguridad y Videovigilancia</option>
+                    <option value="desarrollo" className="font-medium">Desarrollo a Medida</option>
+                    <option value="iot" className="font-medium">Internet de las Cosas</option>
+                    <option value="mantenimiento" className="font-medium">Mantenimiento Integral</option>
+                    <option value="ia" className="font-medium">Inteligencia Artificial</option>
+                    <option value="firma" className="font-medium">Firma Electrónica</option>
+                    <option value="facturacion" className="font-medium">Facturación Electrónica</option>
+                    <option value="soporte" className="font-medium">Soporte Técnico</option>
+                    <option value="hardware" className="font-medium">Hardware y Energía</option>
+                    <option value="ecommerce" className="font-medium">E-commerce</option>
+                    <option value="cloud" className="font-medium">Cloud y Multinube</option>
+                    <option value="otro" className="font-medium">Otro</option>
                   </select>
                   {errors.service_type && (
                     <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
@@ -300,7 +300,7 @@ export default function ContactoPage() {
                   <textarea
                     rows={4}
                     placeholder="Cuéntanos sobre tu proyecto..."
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition resize-none ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition resize-none ${
                       errors.message ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.message}
@@ -355,4 +355,3 @@ export default function ContactoPage() {
     </main>
   )
 }
-// Forzar redeploy con nueva SMTP_PASSWORD
