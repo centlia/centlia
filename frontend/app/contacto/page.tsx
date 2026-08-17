@@ -125,7 +125,7 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">WhatsApp</p>
-                      <a href="https://wa.me/525574223578" target="_blank" className="font-medium text-[#0A1628] hover:text-[#5B21B6] transition">
+                      <a href="https://wa.me/525574223578" target="_blank" className="font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} hover:text-[#5B21B6] transition">
                         (55) 7422 3578
                       </a>
                     </div>
@@ -137,7 +137,7 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Teléfono Móvil</p>
-                      <a href="tel:5574223578" className="font-medium text-[#0A1628] hover:text-[#5B21B6] transition">
+                      <a href="tel:5574223578" className="font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} hover:text-[#5B21B6] transition">
                         (55) 7422 3578
                       </a>
                     </div>
@@ -149,7 +149,7 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Teléfono Fijo</p>
-                      <a href="tel:5524762822" className="font-medium text-[#0A1628] hover:text-[#5B21B6] transition">
+                      <a href="tel:5524762822" className="font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} hover:text-[#5B21B6] transition">
                         (55) 2476 2822
                       </a>
                     </div>
@@ -161,7 +161,7 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Email</p>
-                      <a href="mailto:centlia.utcs@gmail.com" className="font-medium text-[#0A1628] hover:text-[#5B21B6] transition break-all">
+                      <a href="mailto:centlia.utcs@gmail.com" className="font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} hover:text-[#5B21B6] transition break-all">
                         centlia.utcs@gmail.com
                       </a>
                     </div>
@@ -185,11 +185,11 @@ export default function ContactoPage() {
             <form onSubmit={handleSubmit} className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-6 shadow-sm">
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-[#0A1628] mb-1">Nombre completo *</label>
+                  <label className="block text-sm font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} mb-1">Nombre completo *</label>
                   <input
                     type="text"
                     placeholder="Ej: Juan Pérez"
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.name ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.name}
@@ -207,11 +207,11 @@ export default function ContactoPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[#0A1628] mb-1">Email *</label>
+                  <label className="block text-sm font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} mb-1">Email *</label>
                   <input
                     type="email"
                     placeholder="Ej: juan@empresa.com"
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.email ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.email}
@@ -229,11 +229,11 @@ export default function ContactoPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[#0A1628] mb-1">Teléfono * (10 dígitos)</label>
+                  <label className="block text-sm font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} mb-1">Teléfono * (10 dígitos)</label>
                   <input
                     type="tel"
                     placeholder="Ej: 5512345678"
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.phone ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.phone}
@@ -251,20 +251,20 @@ export default function ContactoPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[#0A1628] mb-1">Empresa</label>
+                  <label className="block text-sm font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} mb-1">Empresa</label>
                   <input
                     type="text"
                     placeholder="Nombre de tu empresa"
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition"
                     value={form.company}
                     onChange={(e) => setForm({...form, company: e.target.value})}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[#0A1628] mb-1">Servicio de interés *</label>
+                  <label className="block text-sm font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} mb-1">Servicio de interés *</label>
                   <select
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition ${
                       errors.service_type ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.service_type}
@@ -273,20 +273,20 @@ export default function ContactoPage() {
                       if (errors.service_type) setErrors({...errors, service_type: ''})
                     }}
                   >
-                    <option value="" className="font-medium">Selecciona un servicio</option>
-                    <option value="redes" className="font-medium">Infraestructura y Redes</option>
-                    <option value="seguridad" className="font-medium">Seguridad y Videovigilancia</option>
-                    <option value="desarrollo" className="font-medium">Desarrollo a Medida</option>
-                    <option value="iot" className="font-medium">Internet de las Cosas</option>
-                    <option value="mantenimiento" className="font-medium">Mantenimiento Integral</option>
-                    <option value="ia" className="font-medium">Inteligencia Artificial</option>
-                    <option value="firma" className="font-medium">Firma Electrónica</option>
-                    <option value="facturacion" className="font-medium">Facturación Electrónica</option>
-                    <option value="soporte" className="font-medium">Soporte Técnico</option>
-                    <option value="hardware" className="font-medium">Hardware y Energía</option>
-                    <option value="ecommerce" className="font-medium">E-commerce</option>
-                    <option value="cloud" className="font-medium">Cloud y Multinube</option>
-                    <option value="otro" className="font-medium">Otro</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="" className="font-medium">Selecciona un servicio</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="redes" className="font-medium">Infraestructura y Redes</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="seguridad" className="font-medium">Seguridad y Videovigilancia</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="desarrollo" className="font-medium">Desarrollo a Medida</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="iot" className="font-medium">Internet de las Cosas</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="mantenimiento" className="font-medium">Mantenimiento Integral</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="ia" className="font-medium">Inteligencia Artificial</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="firma" className="font-medium">Firma Electrónica</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="facturacion" className="font-medium">Facturación Electrónica</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="soporte" className="font-medium">Soporte Técnico</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="hardware" className="font-medium">Hardware y Energía</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="ecommerce" className="font-medium">E-commerce</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="cloud" className="font-medium">Cloud y Multinube</option>
+                    <option className="font-medium font-sans" style={{ fontFamily: "Inter, sans-serif" }} value="otro" className="font-medium">Otro</option>
                   </select>
                   {errors.service_type && (
                     <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
@@ -296,11 +296,11 @@ export default function ContactoPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[#0A1628] mb-1">Mensaje *</label>
+                  <label className="block text-sm font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} mb-1">Mensaje *</label>
                   <textarea
                     rows={4}
                     placeholder="Cuéntanos sobre tu proyecto..."
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium text-[#0A1628] focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition resize-none ${
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded-xl font-medium font-sans text-[#0A1628] style={{ fontFamily: "Inter, sans-serif" }} focus:border-[#5B21B6] focus:ring-2 focus:ring-[#5B21B6]/20 outline-none transition resize-none ${
                       errors.message ? 'border-red-400 focus:border-red-500 focus:ring-red-200' : 'border-gray-200'
                     }`}
                     value={form.message}
