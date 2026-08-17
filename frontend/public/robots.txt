@@ -1,0 +1,10 @@
+# OWASP: Evita indexación de rutas sensibles
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /images/
+Disallow: /static/
+
+# Sitemap (cuando esté listo)
+# Sitemap: https://centlia.com/sitemap.xml
