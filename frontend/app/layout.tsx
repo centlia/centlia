@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   publisher: 'CENTLIA',
   robots: 'index, follow',
   metadataBase: new URL('https://centlia.com'),
+  alternates: {
+    canonical: 'https://www.centlia.com',
+  },
+  verification: {
+    google: 'tu-codigo-de-google',
+  },
   icons: {
     icon: [
       { url: '/images/logo/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
@@ -26,14 +32,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CENTLIA - Soluciones Tecnológicas Integrales',
     description: 'Soluciones tecnológicas para empresas: Redes, Videovigilancia, Desarrollo a Medida, IoT y Mantenimiento.',
-    url: 'https://centlia.com',
+    url: 'https://www.centlia.com',
     siteName: 'CENTLIA',
     images: [
       {
         url: '/images/logo/logo.png',
-        width: 200,
-        height: 60,
-        alt: 'CENTLIA Logo',
+        width: 1200,
+        height: 630,
+        alt: 'CENTLIA - Soluciones Tecnológicas Integrales',
       },
     ],
     locale: 'es_MX',
@@ -54,6 +60,34 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "CENTLIA",
+              "alternateName": "CENTLIA Soluciones Tecnológicas Integrales",
+              "url": "https://www.centlia.com",
+              "logo": "https://www.centlia.com/images/logo/logo.png",
+              "description": "Empresa mexicana especializada en soluciones tecnológicas integrales, redes, videovigilancia, desarrollo a medida, IoT y mantenimiento.",
+              "sameAs": [
+                "https://www.linkedin.com/in/centlia-utcs-60360042a/",
+                "https://www.facebook.com/people/Centlia/61593554543565/",
+                "https://x.com/centlia_utcs",
+                "https://www.youtube.com/@CENTLIA"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+52-55-7422-3578",
+                "contactType": "sales",
+                "availableLanguage": ["Spanish"]
+              }
+            })
+          }}
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
